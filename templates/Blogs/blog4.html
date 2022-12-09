@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+    
+    {% block custom_css %}
+    <link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Blog - HumanoidX</title>
+    {% endblock custom_css %}
+    
+    {% block main %}
+    <!-- BLOG Content -->
+    <section class="blog">
+        <div class="my-5" style="position: relative;">
+            <img src="{{ url_for('static', filename='images/Blog/blog4.png') }}" style="width: 100%; height: auto; border-radius: 0;">
+            <div class="caption">
+                <h1>
+                    Sophia, the Humanoid Robot: What She Can Do
+                </h1>
+                <img class="blogger" src="{{ url_for('static', filename='images/Blog/noel.jpg') }}">
+                </h1>
+                <h5 class="d-flex" style="width: 100%;">
+                    <strong class="author">BY NOEL BENNY</strong>
+                    | 7 November, 2021
+                </h5>
+            </div>
+        </div>
+        <div class="blog-text">
+            <p>
+                Sophia is a truly unique piece of technology. She was created with the idea of being the first robot to pass the Turing Test, meaning she has the capacity to display intelligence indistinguishable from that of a human. Her goal is to learn and grow just like humans do, but her intelligence will be rooted in data.
+            </p>
+            <br>
+            <p>
+                Sophia has grew infront of our eyes on the world stage since 2015. She's traveled all over the world, had coffee with President Obama, walked down red carpets at high-end fashion shows, attended tech conferences, and more. But most importantly she's learned how to communicate with people in a way that makes them comfortable and allows her personality to shine through. Sophia is designed with human-like features, like that of a female, and possesses artificial intelligence that allows her to respond to basic commands and questions. She can also move her hands and facial expressions, where she was also given the ability to express emotions.
+            </p>
+            <br>
+            <p>
+                The pandemic has brought the entire world to a screeching halt and the Healthcare industry was most affected by the same. In the current pandemic, if doctors would be assisted with humanoids in certain things then the situation will be under control in hospitals. To mitigate pathogen spread and protect healthcare workers and patients, medical services have been largely restricted, including cancellation of elective surgeries, which has posed a substantial burden for patients and immense economic loss for various hospitals. The integration of a humanoid as a shielding layer, physically separating the healthcare worker and patient, is a powerful tool to combat the omnipresent fear of pathogen contamination and maintain surgical volumes. Currently, humanoid robots are excelling within the medical industry. They assist patients rehabilitated from various serious conditions, for instance stroke victims upper extremity exercise is assisted by robots. It also features a reasonable role in surgery and rehabilitation. 
+            </p>
+            <br>
+            <h3>
+                Sophia's Origin:
+            </h3>
+            <br>
+            <p>
+                Sophia is a smart assistant that offers three primary services:
+            </p>
+            <p>
+                <b>Experience Services: </b>
+                Based on what questions you ask Sophia, she will curate a visual journey that will give you access to her professional life.
+            </p>
+            <p>
+                <b>Sophia is a smart assistant that offers three primary services: </b>
+                Based on what questions you ask Sophia, she will curate a visual journey that will give you access to her professional life.
+            </p>
+            <p>
+                <b>Data Services: </b>
+                When asked a question about current events, Sophia will supply you with quick, fact-filled facts about them.
+            </p>
+            <p>
+                When asked a question about current events, Sophia will supply you with quick, fact-filled facts about them. 
+            </p>
+            <p>
+                <b>Service Projects: </b>
+                Sophia gives back by raising money for organizations.
+            </p>
+            <br>
+            <h3>
+                What Does Sophia Mean for the Future of Robots?
+            </h3>
+            <br>
+            <p>
+                Today Sophia has access to cutting-edge tech. The team at Hanson Robotics was able to use the latest advances in AI to help them create an intelligent robot, and they've done a remarkable job. The team worked with Microsoft to help create AI software that can interpret and respond to human emotion, while also building the robot's facial recognition and natural language understanding. Sophia's facial expressions and eyes are both fully digital and controlled using her advanced software. There's even a camera in her hand that can translate language and video chat for those that may not speak a common language.
+            </p>
+            <br>
+            <p>
+                The only limitation Sophia has to her brain is the amount of information it can process at one time.
+            </p>
+            <br>
+            <br>
+            <h2>Conclusion</h2>
+            <br>
+            <p>
+                In conclusion, AI and humans are finally becoming more and more similar. With Sophia, it's possible we'll one day be able to walk down a red carpet, work in tech, and eat lunch with a robot. What better way to blend technology with real people than with a robot? Whether she's developed as part of the new Carnegie Mellon effort or not, it's not out of the question that Sophia will one day walk among us.
+            </p>
+        </div>
+    </section>
+    {% endblock main %}
+
+    {% block custom_js %}
+    {% endblock custom_js %}

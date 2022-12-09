@@ -1,0 +1,287 @@
+/* GENERAL */
+body {
+  background-color: #1c1f20;
+}
+hr {
+  background-color: #e8e6e3;
+  width: 80%;
+}
+h1,
+h2,
+h3,
+h5 {
+  color: rgba(255, 255, 255, 85%);
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main{
+  text-align: left;
+}
+
+.main:hover{
+  color: #00fff5 !important;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  color: rgba(255, 255, 255, 75%);
+}
+strong {
+  color: white;
+}
+footer {
+  margin-top: 6rem;
+}
+.logo {
+  width: 10%;
+}
+.page-links {
+  padding: 0 10px;
+}
+.fc {
+  padding-bottom: 10px;
+}
+.icon-footer {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.feature-box {
+  color: #00fff5;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.logo {
+  width: 10%;
+}
+
+/* SLIDESHOW */
+.slide-item {
+  background-color: #323232;
+  color: rgba(255, 255, 255);
+  width: 90%;
+  height: 336px;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    padding: 0;
+    height: fit-content;
+    margin: 0 1rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.slide {
+  width: 100%;
+  height: 336px;
+  object-fit: cover;
+  animation: zoomout 10s linear infinite alternate;
+}
+@keyframes zoomout {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: fadeIn;
+    animation-duration: 2.5s;
+}
+
+/* NAVIGATION BUTTONS */
+.btn-left {
+  position: absolute;
+  left: -4%;
+  top: 8.5rem;
+  background: #121212;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #fff;
+}
+
+.btn-right {
+  position: absolute;
+  right: -4%;
+  top: 8.5rem;
+  background: #121212;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #fff;
+  color: white;
+}
+
+.btn-left:hover,.btn-right:hover {
+  background: #00fff5;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #00fff5;
+}
+
+.dot:hover {
+  background-color: #00fff5;
+}
+
+/* BLOG CARDS */
+section {
+    margin: 4rem 6rem;
+}
+#card {
+  padding: 0;
+  
+  align-items: center;
+  max-width: 450px;
+  margin: 2% auto;
+  flex-basis: auto;
+  flex-grow: 1;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+#card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#card:hover .round2 {
+  transform: scale(1.1);
+  transition: all 2s ease-in-out;
+}
+.card-text {
+  font-family: "Merriweather", serif;
+  border-radius: 0 0 20px 20px;
+}
+.round2 {
+    width: 450px;
+    height: 290px;
+}
+.main {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#card h2:hover,
+.main:hover {
+  color: #892cdc;
+  text-decoration: underline;
+}
+.card-img {
+  width: 60%;
+  height: auto;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+      margin: 2rem 4rem;
+  }
+  .display-4 {
+    font-size: 12vmin;
+  }
+  .slideshow,
+  .dot {
+    display: none;
+  }
+  #card {
+    margin: 1rem auto 2rem;
+    padding: 0;
+  }
+  .round2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* BLOG PAGE */
+.blog {
+  margin: 4rem 12rem;
+}
+.blogger {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  left: 6rem;
+  bottom: 1.5rem;
+}
+.author {
+  margin-left: 4rem;
+  margin-right: 0.8rem;
+}
+.blog-text {
+  margin-top: 5rem;
+}
+.blog-text p {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.caption {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 85%);
+  color: #e8e6e3;
+}
+.caption h1,
+.caption h5 {
+  font-weight: 900;
+  margin: 2rem 6rem;
+}
+
+@media screen and (max-width: 900px) {
+  .blog {
+    margin: 2rem 2rem;
+  }
+  .caption {
+    padding: 0;
+    bottom: 1rem;
+  }
+  .caption h1,
+  .caption h5 {
+    font-size: 5vmin;
+    margin: 1rem 2rem;
+  }
+  .caption h5 {
+    font-size: 3vmin;
+  }
+  .author {
+    margin-left: 3rem;
+    margin-right: 0.2rem;
+  }
+  .blogger {
+    width: 30px;
+    height: 30px;
+    left: 2rem;
+    bottom: 0.5rem;
+  }
+  .blog-text {
+    margin-top: 2rem;
+  }
+  .blog-text p {
+    font-size: 3vmin;
+  }
+}

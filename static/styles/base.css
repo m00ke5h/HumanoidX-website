@@ -1,0 +1,181 @@
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: #101010;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 0 soild transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  border: 1em solid #3df1f1;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader:before {
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.tiot::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.tiot::-webkit-scrollbar {
+  width: 10px;
+  background-color: #555;
+}
+
+.tiot::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #00fff5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #103a57;
+}
+
+.nav-link {
+  color: #00fff5;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-brand {
+  color: #00fff5;
+  font-family: monospace;
+}
+
+.nav-icons {
+  color: #00fff5;
+  font-size: x-large;
+}
+
+.nav-icons:hover {
+  color: white;
+}
+
+.feature-box {
+  color: #00fff5;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.icon:hover {
+  color: white;
+}
+
+footer {
+  background-color: #103a57;
+  margin-top: 100px;
+}
+
+.fh {
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  padding-bottom: 4%;
+}
+
+.ftr {
+  font-family: "Quicksand", sans-serif;
+  margin-left: 5%;
+  font-size: 1.3rem;
+}
+
+.ftl {
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo {
+  width: 10%;
+}
+
+.contact-us {
+  padding-left: 10%;
+}
+.made-by {
+  padding-left: 26%;
+}
+
+@media screen and (max-width: 900px) {
+  .made-by {
+    padding-left: 0;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  .ftr {
+    text-align: left;
+    padding-left: 28%;
+  }
+  .contact-us {
+    padding-left: 0;
+    margin-bottom: 13%;
+    margin-top: 5%;
+  }
+  .ftl {
+    text-align: left;
+    padding-left: 17%;
+  }
+}
+
+.logo {
+  width: 10%;
+}
+
+.page-links {
+  padding-left: 10px;
+  padding-right: 10px;
+}

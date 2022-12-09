@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+    
+    {% block custom_css %}
+    <link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Blog - HumanoidX</title>
+    {% endblock custom_css %}
+    
+    {% block main %}
+    <!-- BLOG Content -->
+    <section class="blog">
+        <div class="my-5" style="position: relative;">
+            <img src="{{ url_for('static', filename='images/Blog/blog1.jpg') }}" style="width: 100%; height: auto; border-radius: 0;">
+            <div class="caption">
+                <h1>
+                    Humanoids - A boon or a threat to humans?
+                </h1>
+                <img class="blogger" src="{{ url_for('static', filename='images/Blog/manjuri.jpeg') }}">
+                </h1>
+                <h5 class="d-flex" style="width: 100%;">
+                    <strong class="author">BY MANJURI KAR</strong>
+                    | 22 September, 2021
+                </h5>
+            </div>
+        </div>
+        <div class="blog-text">
+            <p>
+                Since the dawn of civilisation, we have been striving to personify science by channelising it in directions which could fulfil our needs. With curiosity, consistency and creativity, we have been trying to put our knowledge to a better use for all of us.We reside in a world where people’s tastes and preferences are rapidly changing like the days of a calendar, which to an extent influences the demand of innovative technology.One such stranger that crawled into the existence of mankind and made an impact like no other in the history of the universe was “Robots”.
+            </p>
+            <br>
+            <p>
+                Humanoids, a class of robots, have brought a radiant revolution. These machines apparently have human-like capabilities, where some even possess emotions. In the early days, a robot would be termed as a machine that simplifies a human task down to the minimum. Now a robot is interpreted as a humanoid that is capable of motion or social interaction in society. 
+            </p>
+            <br>
+            <p>
+                "Humanoids" resemble human so much that they just seem like a human doing things which we cant’t do in a perfect manner.  But then the question arises that is it good for them to mimic humans so closely? Are they a boon? Or they happen to be a threat?
+            </p>
+            <br>
+            <br>
+            <h2>Here are top 3 reasons as to why they’re a boon:</h2>
+            <br>
+            <h3>1.Wholesome combination of- productivity, accuracy, time saver</h3>
+            <br>
+            <p>
+                Humans are no doubt productive, yet at times due to a lot of circumstances, they reach a saturation level and working for an extra minute seems an impossible task. Surprisingly, these humanoid robots do not possess such behaviour. They keep on working for hours with the same level of accuracy. These robots made up of AI can replace humans by working in place of them and reduce their working hours with least amount of inconvenience and complete the jobs easily with the best results in a short duration when compared to humans.
+            </p>
+            <br>
+            <h3>2.Provides Safety in working environment</h3>
+            <br>
+            <p>
+                As we know that an ounce of prevention is better than a pound of cure, safety all the more steals the limelight. Hence, working in a safe environment is crucial. Humanoids can perform tasks dangerous to human workers like defusing bombs, eliminating safety or health concerns in their working environment. Humanoids are also designed to work alongside humans in close proximity without raising any safety issues. If companies use them, these robots through their diverse functionality and flexibility can ensure safety to the workers making their lives a little less risky than usual.
+            </p>
+            <br>
+            <h3>3. Save the overall budget of the companies using them</h3>
+            <br>
+            <p>
+                Wealth is an important asset hence it should be put to right use. Humanoids although are costly yet act like a onetime venture that gives us fruits for the rest of our life. Humanoids can replace humans hence hereby reducing labour cost. Also, the wastage done by them is negligible which reduces the overall budget and makes them money efficient. 
+            </p>
+            <br>
+            <br>
+            <h2>Here are top 3 reasons as to why they’re a threat:</h2>
+            <br>
+            <h3>1.Will cause unemployment</h3>
+            <br>
+            <p>
+                Undoubtedly, the increasing dominance of humanoid robots in workplaces is sure to increase the levels of unemployment in not just a nation but the world. The rate at which they’re evolving makes us contemplate on the fact that soon all the humans will be replaced by humanoids and then the youth of the nation will be unemployed and that will give rise to a bundle of other successive problems.
+            </p>
+            <br>
+            <h3>2. Making humans overdependent and thus lose their skills</h3>
+            <br>
+            <p>
+                Overdependence isn't a good virtue. Especially when one allows their decision to degrade their skills while letting robots do their entire work. At times it's fine but the regular usage of humanoids in performing tasks assigned to humans makes humans lethargic and lose interest in their field which once set their souls on fire and soon they get used to not working and eventually their relevant skills fade.
+            </p>
+            <br>
+            <h3>3. Reduces human interaction</h3>
+            <br>
+            <p>
+                At the end of the day, we need humans who can understand us beyond our words i.e our emotions. We need companions at work or at life to interpret our problems and give logical suggestions. If humanoids take up the work of humans, then the interaction between humans will eventually reduce. Humans will have more virtual machines in their lives over humans. This shall affect human relations to quite an extent and create gaps between them. 
+            </p>
+            <br>
+            <br>
+            <h2>Conclusion</h2>
+            <p>Thus, despite all the pros and cons, humanoids still emerge as a leading gateway to a comforting future. The advantages it provides seem to be much far fetched compared to the disadvantages. Nevertheless to sum up, these humanoid robots hold the power to captivate several hurdles which otherwise aren’t feasible for us humans, hence we should take the path to develop it for a good cause thereby eliminating a lot of it’s  menances. </p>
+        </div>
+    </section>
+    {% endblock main %}
+
+    {% block custom_js %}
+    {% endblock custom_js %}

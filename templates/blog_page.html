@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block custom_css %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+<title>Blog</title>
+{% endblock custom_css %}
+
+{% block main %}
+<!-- SLIDESHOW -->
+<section class="text-center my-5">
+    <h1 class="display-4" style="font-weight: 900; color: #00fff5;">LATEST BLOGS</h1>
+    <div class="slideshow" style="position: relative;">
+        <a class="slide-item" style="display: none;" href="{{ url_for('blog3') }}">
+            <div class="row">
+                <div class="col img-wrapper">
+                    <img class="slide" src="{{url_for('static', filename='images/Blog/blog3.png') }}">
+                </div>
+                <div class="col my-4">
+                    <p style="text-align: left; font-size:small;"><strong>Date Added - </strong> 31 October, 2021</p>
+                    <!-- <a class="link" href="{{ url_for('blog1') }}"> -->
+                    <h2 class="main" style="font-weight: 700;">Humanoid Robots! One Step Closer To Holistic Automation</h2>
+                    <!-- </a> -->
+                    <p class="text-justify" style="padding-right: 2rem;">
+                        While we are advancing toward a newly science created world, humanoids are the main part of it. So, let’s start with knowing a little more about humanoids!!
+                    </p>
+                    <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 2rem;">
+                        <div class="col-md-2">
+                            <img src="{{url_for('static', filename='images/Blog/ananya.jpeg') }}"
+                                style="width: 100%; height: auto; border-radius: 100%; ">
+                        </div>
+                        <div class="col p-0">
+                            <p class="m-0" style="font-size:small;"><strong>Ananya Rathore</strong></p>
+                            <p style="font-size: smaller;">Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="slide-item" style="display: none;" href="{{ url_for('blog4') }}">
+            <div class="row">
+                <div class="col img-wrapper">
+                    <img class="slide" src="{{url_for('static', filename='images/Blog/blog4.png') }}">
+                </div>
+                <div class="col my-4">
+                    <p style="text-align: left; font-size:small;"><strong>Date Added - </strong> 7 November, 2021</p>
+                    <h2 class="main" style="font-weight: 700;">Sophia, the Humanoid Robot</h2>
+                    <p class="text-justify" style="padding-right: 2rem;">
+                        Sophia is a truly unique piece of technology. She was created with the idea of being the first robot to pass the Turing Test, meaning she has the capacity to display intelligence indistinguishable from that of a human.
+                    </p>
+                    <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 2rem;">
+                        <div class="col-md-2">
+                            <img src="{{url_for('static', filename='images/Blog/noel.jpg') }}"
+                                style="width: 100%; height: auto; border-radius: 100%; ">
+                        </div>
+                        <div class="col p-0">
+                            <p class="m-0" style="font-size:small;"><strong>Noel Benny</strong></p>
+                            <p style="font-size: smaller;">Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="slide-item" style="display: none;" href="{{ url_for('blog5') }}">
+            <div class="row">
+                <div class="col img-wrapper">
+                    <img class="slide" src="{{url_for('static', filename='images/Blog/blog5.png') }}">
+                </div>
+                <div class="col my-4">
+                    <p style="text-align: left; font-size:small;"><strong>Date Added - </strong> 17 November, 2021</p>
+                    <h2 class="main" style="font-weight: 700;">Humanoid robot applications in COVID-19</h2>
+                    <p class="text-justify" style="padding-right: 2rem;">
+                        Humanoid robots have an anthropometric structure that is similar to that of humans, yet they are highly different and versatile when compared to humans and their activities.
+                    </p>
+                    <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 2rem;">
+                        <div class="col-md-2">
+                            <img src="{{url_for('static', filename='images/Blog/manjuri.jpeg') }}"
+                                style="width: 100%; height: auto; border-radius: 100%; ">
+                        </div>
+                        <div class="col p-0">
+                            <p class="m-0" style="font-size:small;"><strong>Manjuri Kar</strong></p>
+                            <p style="font-size: smaller;">Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <button type="button" class="btn btn-floating btn-left" onclick="plusSlides(-1)">&#10094;
+        </button>
+        <button type="button" class="btn btn-floating btn-right" onclick="plusSlides(1)">&#10095;
+        </button>
+    </div>
+    <div class="text-centre">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+
+<!-- BLOG CARDS -->
+<section>
+    <div class="row">
+        <a class="col" id="card" data-aos="fade-in" href="{{ url_for('blog1') }}">
+            <img class="round2" src="{{url_for('static', filename='images/Blog/blog1.jpg') }}">
+            <div class="text-left px-3 card-text">
+                <p class="mt-4" style="text-align: left; font-size:small;"><strong>Date Added - </strong> 22 September,
+                    2021</p>
+                <h2 class="main" style="font-weight: 700;">Humanoids - A boon or a bane</h2>
+                <p class="text-justify">Since the dawn of civilisation, we have been striving to personify science by
+                    channelising it in directions which could fulfil our needs. With curiosity, consistency and
+                    creativity, we have been trying to put our knowledge to a better use for all of us.
+                </p>
+                <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 1rem;">
+                    <div class="col-4 text-center">
+                        <img class="card-img" src="{{url_for('static', filename='images/Blog/manjuri.jpeg')}}">
+                    </div>
+                    <div class="col p-0">
+                        <p class="m-0" style="font-size:small;"><strong>Manjuri Kar</strong></p>
+                        <p style="font-size: smaller;">Member</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col" id="card" data-aos="fade-in" href="{{ url_for('blog2') }}">
+            <img class="round2" src="{{url_for('static', filename='images/Blog/blog2.jpg') }}">
+            <div class="text-left px-3 card-text">
+                <p class="mt-4" style="text-align: left; font-size:small;"><strong>Date Added - </strong> 22 September,
+                    2021</p>
+
+                <h2 class="main" style="font-weight: 700;">Future of Humanoids</h2>
+                <p class="text-justify">Specifically, we highlight challenges to the use of humanoids from a user
+                    perspective, including issues such as privacy, autonomy, and the dehumanization of interactions; or
+                    from a worker perspective, including issues such as the possible replacement of jobs through them.
+                </p>
+                <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 1rem;">
+                    <div class="col-4 text-center"">
+                            <img src=" {{url_for('static', filename='images/Blog/blog2author.jpeg')}}" class="card-img">
+                    </div>
+
+                    <div class="col p-0">
+                        <p class="m-0" style="font-size:small;"><strong>Ananya Rathore | Noel Benny</strong></p>
+                        <p style="font-size: smaller;">Members</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col" id="card" data-aos="fade-in" href="{{ url_for('blog3') }}">
+            <img class="round2" src="{{url_for('static', filename='images/Blog/blog3.png') }}">
+            <div class="text-left px-3 card-text">
+                <p class="mt-4" style="text-align: left; font-size:small;"><strong>Date Added - </strong> 31 October,
+                    2021</p>
+                <h2 class="main" style="font-weight: 700;">Humanoid Robots! One Step Closer To Holistic Automation</h2>
+                <p class="text-justify">
+                    While we are advancing toward a newly science created world, humanoids are the main part of it. So, let’s start with knowing a little more about humanoids!!
+                </p>
+                <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 1rem;">
+                    <div class="col-4 text-center">
+                        <img class="card-img" src="{{url_for('static', filename='images/Blog/ananya.jpeg')}}">
+                    </div>
+                    <div class="col p-0">
+                        <p class="m-0" style="font-size:small;"><strong>Ananya Rathore</strong></p>
+                        <p style="font-size: smaller;">Member</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col" id="card" data-aos="fade-in" href="{{ url_for('blog4') }}">
+            <img class="round2" src="{{url_for('static', filename='images/Blog/blog4.png') }}">
+            <div class="text-left px-3 card-text">
+                <p class="mt-4" style="text-align: left; font-size:small;"><strong>Date Added - </strong> 7 November,
+                    2021</p>
+                <h2 class="main" style="font-weight: 700;">Sophia, the Humanoid Robot</h2>
+                <p class="text-justify">
+                    Sophia is a truly unique piece of technology. She was created with the idea of being the first robot to pass the Turing Test, meaning she has the capacity to display intelligence indistinguishable from that of a human.
+                </p>
+                <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 1rem;">
+                    <div class="col-4 text-center">
+                        <img class="card-img" src="{{url_for('static', filename='images/Blog/noel.jpg')}}">
+                    </div>
+                    <div class="col p-0">
+                        <p class="m-0" style="font-size:small;"><strong>Noel Benny</strong></p>
+                        <p style="font-size: smaller;">Member</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col" id="card" data-aos="fade-in" href="{{ url_for('blog5') }}">
+            <img class="round2" src="{{url_for('static', filename='images/Blog/blog5.png') }}">
+            <div class="text-left px-3 card-text">
+                <p class="mt-4" style="text-align: left; font-size:small;"><strong>Date Added - </strong> 17 November,
+                    2021</p>
+                <h2 class="main" style="font-weight: 700;">Humanoid robot applications in COVID-19</h2>
+                <p class="text-justify">
+                    Humanoid robots have an anthropometric structure that is similar to that of humans, yet they are highly different and versatile when compared to humans and their activities.
+                </p>
+                <div class="row text-left" style="width: 75%; height: 3.5rem; margin-top: 1rem;">
+                    <div class="col-4 text-center">
+                        <img class="card-img" src="{{url_for('static', filename='images/Blog/manjuri.jpeg')}}">
+                    </div>
+                    <div class="col p-0">
+                        <p class="m-0" style="font-size:small;"><strong>Manjuri Kar</strong></p>
+                        <p style="font-size: smaller;">Member</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+{% endblock main %}
+
+{% block custom_js %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 50,
+        easing: 'ease-in-out',
+    });
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/blog-page.js') }}"></script>
+{% endblock custom_js %}

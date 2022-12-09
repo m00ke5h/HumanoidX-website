@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+    
+    {% block custom_css %}
+    <link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Blog - HumanoidX</title>
+    {% endblock custom_css %}
+    
+    {% block main %}
+    <!-- BLOG Content -->
+    <section class="blog">
+        <div class="my-5" style="position: relative;">
+            <img src="{{ url_for('static', filename='images/Blog/blog2.jpg') }}" style="width: 100%; height: auto; border-radius: 0;">
+            <div class="caption">
+                <h1>
+                    Future of Humanoids
+                </h1>
+                <img class="blogger" src="{{ url_for('static', filename='images/Blog/blog2author.jpeg') }}">
+                </h1>
+                <h5 class="d-flex" style="width: 100%;">
+                    <strong class="author">BY ANANYA RATHORE & NOEL BENNY</strong>
+                    | 22 September, 2021
+                </h5>
+            </div>
+        </div>
+        <div class="blog-text">
+            <p>
+                Specifically, we highlight challenges to the use of humanoids from a user perspective, including issues such as privacy, autonomy, and the dehumanization of interactions; or from a worker perspective, including issues such as the possible replacement of jobs through them.
+Well, it’s often said and believed by a number of people that humanoids should not be trusted because they are “just machines.” Although, these machines have proven constantly that they are capable of doing the things in a very efficient manner or we can say just as humans. 
+            </p>
+            <br>
+            <p>
+                A humanoid is an artificial intelligence (AI) system designed to interact with humans and other robots. In the workplace, they have the potential to take over job functions, such as greeting and basic customer service. Nowadays people are raising concern over humanoids taking over human jobs and that it is a crisis to welfare of society but what they forget is the development of AI and science is to make society a far better place to live, to provide aid to humans.This stripe is gold for the ring called world and thus concluding right now is unjust to technology.  As the humanoid is increasingly endowed with human natures (e.g., voice, appearance, and motion), it is necessary to define its social identity, as we generally do with human beings. Group orientation of a humanoid will be efficacious, especially in a collaborative decision-making process. Accordingly, the more people widen in this field the more they will convalesce.
+            </p>
+            <br>
+            <p>
+                The pandemic has brought the entire world to a screeching halt and the Healthcare industry was most affected by the same. In the current pandemic, if doctors would be assisted with humanoids in certain things then the situation will be under control in hospitals. To mitigate pathogen spread and protect healthcare workers and patients, medical services have been largely restricted, including cancellation of elective surgeries, which has posed a substantial burden for patients and immense economic loss for various hospitals. The integration of a humanoid as a shielding layer, physically separating the healthcare worker and patient, is a powerful tool to combat the omnipresent fear of pathogen contamination and maintain surgical volumes. Currently, humanoid robots are excelling within the medical industry. They assist patients rehabilitated from various serious conditions, for instance stroke victims upper extremity exercise is assisted by robots. It also features a reasonable role in surgery and rehabilitation. 
+            </p>
+            <br>
+            <br>
+            <h2>Conclusion</h2>
+            <br>
+            <p>
+                Humanoids encourage students to learn by seeking attention from students and draw curiosity and stimulate interests to study and grow. We can send humanoids to discover space while not having to fear a lot regarding their safety. Of course, we wish these carefully built humanoids to last. We need them to stick around long enough to analyze and send us information regarding their destinations.
+            </p>
+            <br>
+            <p>
+                But even if the mission fails, humans involved in the mission will stay safe. There will be a relatively big rise in the number of humanoids in the next decade because humanoids can be faster and more precise in comparison with the homo sapiens.
+            </p>
+            <br>
+            <p>
+                This brings us to the cessation of this blog; I hope the mob will find it useful. Stay safe!
+            </p>
+        </div>
+    </section>
+    {% endblock main %}
+
+    {% block custom_js %}
+    {% endblock custom_js %}

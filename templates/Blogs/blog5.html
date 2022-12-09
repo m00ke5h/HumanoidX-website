@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+    
+    {% block custom_css %}
+    <link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Blog - HumanoidX</title>
+    {% endblock custom_css %}
+    
+    {% block main %}
+    <!-- BLOG Content -->
+    <section class="blog">
+        <div class="my-5" style="position: relative;">
+            <img src="{{ url_for('static', filename='images/Blog/blog5.png') }}" style="width: 100%; height: auto; border-radius: 0;">
+            <div class="caption">
+                <h1>
+                    Humanoid robot applications in COVID-19
+                </h1>
+                <img class="blogger" src="{{ url_for('static', filename='images/Blog/manjuri.jpeg') }}">
+                </h1>
+                <h5 class="d-flex" style="width: 100%;">
+                    <strong class="author">BY MANJURI KAR</strong>
+                    | 17 November, 2021
+                </h5>
+            </div>
+        </div>
+        <div class="blog-text">
+            <p>
+                Humanoid robots have an anthropometric structure that is similar to that of humans, yet they are highly different and versatile when compared to humans and their activities. Humanoid robots are commonly used in the fields of healthcare and education, but science is now attempting to harness their potential and use them in a variety of fields that can be hazardous to humans but require human skill to perform, such as mining where hazardous gases may be present, bomb disposal squads, disinfectant spraying, and cleaning jobs.
+            </p>
+            <br>
+            <p>
+                As we are currently battling the noble Covid-19 disease, a humanoid robot assistant could be useful in a variety of applications such as distributing sanitizers, distributing food materials and food packets, thermal scanning, and so on. However, this can be both technically challenging and fascinating. The artificial intelligence (AI) humanoid robot can also be used to raise awareness about the Covid-19 sickness.
+            </p>
+            <br>
+            <p>
+                To help with the problem, an army of similar robots has been dispatched all around the planet. Patients are being monitored, hospitals are being sanitised, deliveries are being made, and frontline medical staff are being helped to minimise their viral exposure. Not all robots are self-contained. Many, for example, require close human supervision and are restricted to simple, repetitive activities. Makers of robots, on the other hand, are confident that the experience gathered during this trial-by-fire deployment will make future machines smarter and more capable. Healthcare workers are among the most vulnerable to the novel coronavirus owing to their proximity to infected patients.
+            </p>
+            <br>
+            <p>
+                Moreover, physical examination remains a challenge for them despite being in cumbersome PPE kits. Coming to their rescue to some extent now are humanoid robots who are helping them in examining patients and other procedures, thereby reducing their exposure to the virus and paving the way for the use of machine in the Covid-19 fight. From disinfecting floors, carrying out temperature checks to arranging a video call with doctors in case of an emergency, the robots in Indian and international hospitals are doing all this and much more.
+            </p>
+            <br>
+            <p>
+                The following are a few notable Humanoids that have come to life:
+            </p>
+            <br>
+            <p>
+                These robots, which can travel at a speed of 2.9 kmph and record all activities using their in-built three-dimensional (3D) data and high-definition (HD) camera, and were first adopted by AIIMS Delhi, which began testing 92cm-tall robots in Covid wards this April, and slowly adopted by various private multi-specialty hospitals, can travel at a speed of 2.9 kmph and connect patients with their friends and family members via its 10-inch screen.
+            </p>
+            <br>
+            <p>
+                As advised by the ICMR, robots now assist in cleaning floors and sanitising spaces using sodium hydrochloride solution. Invento Robotics took it a step further and employed ultraviolet light (UV-C) for disinfection in Apollo Hospital in Bangalore.
+            </p>
+            <br>
+            <p>
+                Then there's Grace. Grace, a new prototype from the Hong Kong team behind celebrity humanoid robot Sophia, is aimed at the healthcare market and developed to communicate with the elderly and those separated by the COVID-19 pandemic. Grace's resemblance to a healthcare worker and ability to socialise is intended to relieve the strain on front-line medical employees who are already overworked during the pandemic.
+            </p>
+            <br>
+            <p>
+                Grace's debut coincides with the global impact of the coronavirus, which has heightened the necessity for humanoid robots. The cost of constructing the robots, which is currently comparable to the cost of a luxury car, will drop if the company is producing tens or hundreds of thousands of units, according to Hanson. Many people have been affected by negative ideas while stuck at home during COVID-19 lockdowns. Nevertheless the fact that such robots are there at lamplight, do make people breath a sigh of relief.
+            </p>
+        </div>
+    </section>
+    {% endblock main %}
+
+    {% block custom_js %}
+    {% endblock custom_js %}

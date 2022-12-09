@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+    
+    {% block custom_css %}
+    <link href="{{ url_for('static', filename='styles/blog-page.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Blog - HumanoidX</title>
+    {% endblock custom_css %}
+    
+    {% block main %}
+    <!-- BLOG Content -->
+    <section class="blog">
+        <div class="my-5" style="position: relative;">
+            <img src="{{ url_for('static', filename='images/Blog/blog3.png') }}" style="width: 100%; height: auto; border-radius: 0;">
+            <div class="caption">
+                <h1>
+                    Humanoid Robots! One Step Closer To Holistic Automation
+                </h1>
+                <img class="blogger" src="{{ url_for('static', filename='images/Blog/ananya.jpeg') }}">
+                </h1>
+                <h5 class="d-flex" style="width: 100%;">
+                    <strong class="author">BY ANANYA RATHORE</strong>
+                    | 31 October, 2021
+                </h5>
+            </div>
+        </div>
+        <div class="blog-text">
+            <p>
+                While we are advancing toward a newly science created world, humanoids are the main part of it. So, let’s start with knowing a little more about humanoids!!
+            </p>
+            <br>
+            <p>
+                Humanoid robots are now used as research tools in several scientific areas. Researchers study the human body structure and behavior (biomechanics) to build humanoid robots. They are essentially robots with the appearance, form and shape of humans, capabilities to interact and work with humans and human-tools to increase productivity. At a bare minimum, these humanoids today, can effortlessly do facial recognition, detect certain human movements and gestures, and respond appropriately. On the other side, the attempt to simulate the human body leads to a better understanding of it. 
+            </p>
+            <br>
+            <h3>The relevance of humanoids today!</h3>
+            <br>
+            <p>
+                While the current capabilities of humanoids are quite finite, the outlook towards humanoids is now slowly changing with more organizations warming up to adopting Intelligent Automation to cope with the current pandemic crisis. Going forward, with increased focus on AI and other such cutting-edge technologies, humanoids will evolve quickly.
+            </p>
+            <br>
+            <h3>This is not all. Humanoids are also helpful during pandemic!</h3>
+            <br>
+            <p>
+                The current pandemic is a classic scenario where a humanoid can be effectively put in use to make sure that business operations run smoothly while ensuring employee safety. A squad of robots serves as the first line of defense against person-to-person transmission at a medical center in Kigali, Rwanda. The robots, developed by Chinese firm Sanbot, are equipped with cameras and microphones and can also access patient data like blood oxygen levels. 
+One more instance is humanoid bots being deployed at airports for passenger screening, recording traveller information, thermal screening, scan passports etc. This can be instantly recorded as well for tracking and so on.
+            </p>
+            <br>
+            <h3>Now for our geeks, the working loop of humanoids</h3>
+            <br>
+            <p>
+                We are all aware that the human-in-loop concept in automation plays a vital role in handing-off to a bot or taking over from a bot for activities involving judgement and cognition. Similarly, frontend activities are mostly done by human workforce before they pass on the baton to the digital workforce working for the back-office operations.
+            </p>
+            <br>
+            <p>
+                The current unprecedented situation is an ideal time to test humanoids – end-to-end – across the entire process chain. Let’s see how the “Humanoid-in-loop” works:
+            </p>
+            <br>
+            <p><b>Step 1:</b> The humanoid interacts with customers/ end-users, taking information from them. This could be digital information keyed in by customers or could be in the form of photographs taken by the humanoids or physical documents scanned by the humanoid.</p>
+            <br>
+            <p><b>Step 2:</b> The humanoids then send them to back office digital worker queues for processing.</p>
+            <br>
+            <p><b>Step 3:</b> The digital workers then further process the information using OCR, AI/ML technologies and update the appropriate IT systems and complete the processing.</p>
+            <br>
+            <br>
+            <h2>Conclusion</h2>
+            <br>
+            <p>So, moving forward we can combine man’s and humanoid power as a collaborative workforce to add more value across the process and benefits in the end.</p>
+            <br>
+            <p>Let the force be with us!</p>
+        </div>
+    </section>
+    {% endblock main %}
+
+    {% block custom_js %}
+    {% endblock custom_js %}
